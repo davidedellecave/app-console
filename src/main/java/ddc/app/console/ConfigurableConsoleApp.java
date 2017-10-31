@@ -1,7 +1,6 @@
 package ddc.app.console;
 
 import java.io.File;
-import java.io.IOException;
 
 import ddc.support.util.Validator;
 
