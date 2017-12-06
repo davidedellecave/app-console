@@ -62,4 +62,19 @@ public abstract class PropsConfigApp {
 		Path path = Paths.get(sPath);
 		return path;
 	}
+	
+	public Boolean getPropAsBoolean(Properties props, String key) {
+		String s = props.getProperty(key);
+		return Boolean.valueOf(s);
+	}
+	
+	public String getPropAsString(Properties props, String key) {
+		return props.getProperty(key);
+	}
+
+	public long getPropAsLong(Properties props, String key) {
+		String s = props.getProperty(key);
+		return Long.valueOf(s);
+	}
+
 }
